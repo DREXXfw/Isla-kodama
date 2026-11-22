@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#17251d">
+<title>Isla Kodama</title>
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div id="game"></div>
+<div id="loading"><div class="load-title">ISLA KODAMA</div><div>Preparando la isla...</div></div>
+<div id="hud">
+  <div class="topline">
+    <div class="brand">ISLA KODAMA <small>SUPERVIVENCIA</small></div>
+    <div class="stats">
+      <span id="fps">FPS --</span>
+      <span id="day">DÍA 1 · PRIMAVERA</span>
+    </div>
+  </div>
+  <div class="meters">
+    <div class="meter"><label>VIDA</label><div><i id="health"></i></div></div>
+    <div class="meter"><label>HAMBRE</label><div><i id="food"></i></div></div>
+    <div class="meter"><label>ENERGÍA</label><div><i id="stamina"></i></div></div>
+  </div>
+  <div id="notice">Explora la isla y reúne recursos.</div>
+  <div id="inventory">
+    <span> Madera <b id="wood">0</b></span>
+    <span> Piedra <b id="stone">0</b></span>
+    <span> Fibra <b id="fiber">0</b></span>
+    <span> Comida <b id="berries">0</b></span>
+  </div>
+  <div id="help">Joystick: moverse · Arrastra la pantalla: mirar · Acércate a un recurso y pulsa RECOGER</div>
+</div>
+
+<div id="joystick"><div id="stick"></div></div>
+<div id="actions">
+  <button id="interact">RECOGER</button>
+  <button id="build">CONSTRUIR</button>
+  <button id="eat">COMER</button>
+  <button id="menu">MENÚ</button>
+</div>
+
+<div id="panel" class="hidden">
+  <div class="panel-card">
+    <button id="close" class="close">×</button>
+    <h2 id="panelTitle">Construcción</h2>
+    <p id="panelText">Construye tu primer refugio.</p>
+    <div id="panelButtons"></div>
+  </div>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
